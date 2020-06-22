@@ -1,4 +1,4 @@
-# OpenEMR_Vulnerabilities
+# OpenEMR Remote Code Execution Vulnerability
 [OpenEMR 5.0.1](https://www.open-emr.org/) allows an authenticated attacker to upload and execute malicious php codes.
 
 
