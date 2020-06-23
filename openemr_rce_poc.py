@@ -104,12 +104,17 @@ if args.target is not None and args.username is not None and args.password is no
 
 else:
     print("""
-usage: openemr_rce_poc.py [-h] [--target TARGET]
+usage: openemr_rce_poc.py [-h] [--target TARGET] [--username USERNAME]
+                          [--password PASSWORD]
 
 optional arguments:
   -h, --help            show this help message and exit
   --target TARGET, -t TARGET
                         give OpenEMR URL
+  --username USERNAME, -u USERNAME
+                        give OpenEMR username
+  --password PASSWORD, -p PASSWORD
+                        give OpenEMR password
                         
 Example: python3 openemr_rce_poc.py -t http://127.0.0.1/openemr/ -u admin -p Passw0rd
 """)
