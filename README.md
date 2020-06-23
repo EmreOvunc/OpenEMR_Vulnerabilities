@@ -1,8 +1,20 @@
 # OpenEMR Remote Code Execution Vulnerability
 [OpenEMR 5.0.1](https://www.open-emr.org/) allows an authenticated attacker to upload and execute malicious php codes.
 
-**Miscellaneous >> New Documents >> Patient Information >> Upload**
+# PoC 
+```
+usage: openemr_rce_poc.py [-h] [--target TARGET] [--username USERNAME]
+                          [--password PASSWORD]
 
+optional arguments:
+  -h, --help            show this help message and exit
+  --target TARGET, -t TARGET
+                        give OpenEMR URL
+  --username USERNAME, -u USERNAME
+                        give OpenEMR username
+  --password PASSWORD, -p PASSWORD
+                        give OpenEMR password
+```
 # CVE-2020-XXXXX
 To exploit vulnerability, someone could use 'http://[HOST]/controller.php?document&upload&patient_id=00&parent_id=4&' post request to upload malicious php codes.
 
