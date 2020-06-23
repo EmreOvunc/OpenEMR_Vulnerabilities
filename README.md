@@ -2,6 +2,10 @@
 [OpenEMR 5.0.1](https://www.open-emr.org/) allows an authenticated attacker to upload and execute malicious php codes.
 
 # PoC 
+![alt tag](https://emreovunc.com/blog/en/openemr_5.0.1_rce_02.png)
+
+![alt tag](https://emreovunc.com/blog/en/openemr_5.0.1_rce_01.png)
+
 ```
 usage: openemr_rce_poc.py [-h] [--target TARGET] [--username USERNAME]
                           [--password PASSWORD]
