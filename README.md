@@ -25,7 +25,7 @@ optional arguments:
   --password PASSWORD, -p PASSWORD
                         give OpenEMR password
 ```
-# CVE-2020-XXXXX
+# CVE-2020-19364
 To exploit vulnerability, someone could use 'http://[HOST]/controller.php?document&upload&patient_id=00&parent_id=4&' post request to upload malicious php codes.
 
 ```
